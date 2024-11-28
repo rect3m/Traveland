@@ -1,0 +1,74 @@
+.bg-header {
+  background-image: url('/images/first_block.png'); /* Ваше зображення */
+  background-size: cover; /* Заповнення блоку */
+  background-position: center; /* Центрування */
+  background-repeat: no-repeat; /* Не повторювати фон */
+  min-height: 100vh; /* Висота екрану */
+  display: flex; /* Flexbox для вирівнювання вмісту */
+  flex-direction: column; /* Вертикальне розташування */
+  justify-content: flex-start; /* Розташування ближче до верху */
+  align-items: flex-start; /* Вирівнювання по лівому краю */
+  padding: 20px;
+  position: relative;
+  z-index: 1; /* Встановлює контекст для вмісту */
+}
+
+.bg-header::before {
+  content: ''; /* Додаємо порожній шар */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон */
+  z-index: -1; /* Розташовуємо позаду основного вмісту */
+}
+
+/* Логотип */
+.navbar-brand {
+  font-size: 1.5rem; /* Розмір шрифту */
+  font-family: 'Ribeye', cursive;
+  color: #fff;
+}
+
+/* Навігація */
+.navbar  {
+  list-style: none; /* Без маркерів */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  padding-top: 1.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.navbar-nav .nav-item {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  margin: 0 20px;
+}
+
+/* Текст у заголовку */
+.text-left {
+  position: absolute;
+  top: 12%; /* Відступ вниз */
+  left: 16%; /* Відступ ліворуч */
+  text-align: left; /* Текст вирівнюється по лівому краю */
+  max-width: 700px;
+}
+
+.text-left h1 {
+  font-size: 4rem; /* Заголовок */
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  line-height: 1.3; /* Відстань між рядками */
+}
+
+.text-left p {
+  font-size: 1.2rem; /* Опис */
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 8%;
+}

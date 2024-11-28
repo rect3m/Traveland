@@ -1,0 +1,132 @@
+@import '/css/buttons.css';
+@import '/css/first-section.css';
+@import '/css/footer.css';
+@import '/css/header.css';
+@import '/css/second-section.css';
+@import '/css/third-section.css';
+
+h1, h2{
+  font-family: 'Gelasio';
+  font-size: 45px;
+}
+
+.collapse:not(.show) + .main-content {
+  transition: margin-top 0.3s ease-in-out;
+  margin-top: 0;
+}
+
+.collapse.show + .main-content {
+  margin-top: 200px; 
+}
+
+.navbar-collapse {
+  transition: height 0.3s ease-in-out;
+}
+
+.my-5{
+  margin-top: 10% !important;
+}
+
+@media (max-width: 768px) {
+  .bg-header {
+    background-size: cover; 
+    background-position: 88%;
+    min-height: 100vh; 
+  }
+
+  .text-left {
+    left: 0; 
+    text-align: left;
+    max-width: 100%; 
+    padding: 0 15px; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 25%;
+  }
+
+  .text-left h1 {
+    font-size: 2.5rem; 
+  }
+
+  .text-left p {
+    font-size: 1rem; 
+  }
+
+  .nav {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%; 
+    margin-top: 10px;
+  }
+
+.navbar-nav .custom-btn {
+  display: none; 
+}
+
+.nav-item{
+  text-align: center;
+}
+
+.navbar-collapse.show .navbar-nav .custom-btn {
+  display: block; 
+  text-align: center;
+  width: 100%; 
+  margin-top: 10px;
+}
+
+.my-5{
+  margin-top: 30% !important;
+}
+
+.social-icon {
+  margin: 30px; 
+  width: 20px;
+  height: 20px;
+}
+
+}
+
+@media (max-width: 576px) {
+  .text-left h1 {
+    font-size: 2rem; 
+  }
+
+  .text-left p {
+    font-size: 0.9rem; 
+  }
+
+  .bg-header {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav .custom-btn.d-md-none {
+      display: none;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .cards img {
+      height: 150px; 
+  }
+  .cards-body {
+      padding: 10px;
+  }
+  .cards-title {
+      font-size: 1rem;
+  }
+  .cards-body .details {
+      font-size: 0.8rem;
+  }
+  .cards-body .price {
+      font-size: 0.9rem;
+  }
+}
+
+

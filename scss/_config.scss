@@ -1,0 +1,66 @@
+// USER VARIABLES SECTION
+
+$accent: blue; // Accent Color
+$fontsize: 16px; // Body Font Size
+$textcolor: #333333; // Text Color
+$lineheight: 1.65; // Document Line Height
+$userfont: roboto, sans-serif; // User Font Family
+$systemfont: -apple-system, blinkmacsystemfont, arial, sans-serif; // System Font Family
+
+// IMPORT SECTION
+
+@import 'bootstrap-reboot/bootstrap-reboot';
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: url($furl) format("woff2");
+  }
+}
+
+@include font("roboto", normal, 400, "../fonts/roboto/roboto-regular-webfont.woff2");
+@include font("roboto", italic, 400, "../fonts/roboto/roboto-italic-webfont.woff2");
+@include font("roboto", normal, 700, "../fonts/roboto/roboto-bold-webfont.woff2");
+@include font("roboto", italic, 700, "../fonts/roboto/roboto-bolditalic-webfont.woff2");
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+  color: #666666;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: $accent;
+}
+
+*:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  outline: none;
+
+  &:required:valid {
+    border-color: green;
+  }
+
+  &:focus:required:invalid {
+    border-color: red;
+  }
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: $userfont;
+  font-size: $fontsize;
+  line-height: $lineheight;
+  color: $textcolor;
+}

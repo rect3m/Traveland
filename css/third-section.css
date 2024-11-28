@@ -1,0 +1,100 @@
+.col-8 h2 {
+  margin-top: 8%;
+  margin-left: 17%;
+  font-size: 20px;
+}
+.col-8 p {
+  margin-left: 17%;
+  color: #8A8A8A;
+}
+
+.col-8 h4{
+  margin-left: 17%;
+  font-size: 20px;
+}
+
+.col-md-3 a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight:600;
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+.col-md-3 h3 {
+  font-size: 1.5rem; /* Розмір шрифту */
+  font-family: 'Ribeye', cursive;
+  margin-top: 7%;
+  margin-bottom: 10%;
+}
+
+.col-md-3 h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 10%;
+}
+
+#specific-image {
+  max-width: none;
+  width: 135% !important; /* Постійне збільшення */
+  height: auto !important;
+  cursor: zoom-in;
+}
+
+#specific-text {
+  font-size: 20px;
+}
+
+#specific-p {
+  color: #8A8A8A;
+}
+
+#cursor{
+cursor: zoom-in;
+}
+
+/* Зображення в модальному вікні */
+#zoomedImage {
+  transition: transform 0.3s ease; /* Додаємо плавний ефект збільшення */
+  cursor: zoom-out; /* Іконка збільшення */
+}
+
+/* Збільшення зображення */
+#zoomedImage:hover {
+  transform: scale(1.5); /* Збільшує зображення на 50% */
+}
+
+/* Робимо модальне вікно повноекранним */
+.modal-fullscreen {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+/* Центруємо зображення в модальному вікні */
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Висота вікна модального вікна */
+  background-color: transparent; /* Напівпрозорий чорний фон */
+  backdrop-filter: blur(5px); /* Додає розмиття заднього фону */
+  backdrop-filter: none;
+}
+
+/* Зображення розтягується на весь екран */
+.modal-body img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Зберігає пропорції зображення */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Додає тінь для виділення зображення */
+}
+
+/* Видаляємо стандартний фон та рамки */
+.modal-content {
+  background: none;
+  border: none;
+  box-shadow: none;
+}

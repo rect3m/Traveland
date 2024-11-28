@@ -1,0 +1,33 @@
+.btn {
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.custom-btn {
+  background-color: #C9453B; /* Основний колір кнопки */
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 7.5px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #B73A30; /* Колір при наведенні */
+}
+
+.custom-btn:focus,
+.custom-btn:active {
+  background-color: #B73A30; /* Колір після натискання */
+  outline: none; /* Забрати синю рамку */
+  box-shadow: 0 0 0 2px rgba(183, 58, 48, 0.5); /* Кастомний ефект */
+}
+
+.btn-primary.custom-btn:active,
+.btn-primary.custom-btn:focus {
+  background-color: #B73A30 !important;
+  border-color: #B73A30 !important;
+  box-shadow: 0 0 0 0.2rem rgba(183, 58, 48, 0.5); /* Кастомний відтінок тіні */
+}

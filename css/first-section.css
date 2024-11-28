@@ -1,0 +1,9 @@
+.card h3 {
+  font-family: 'Gelasio';
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}

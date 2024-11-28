@@ -1,0 +1,97 @@
+.cards {
+  border: none; /* Забираємо рамку */
+  border-radius: 10px; /* Закруглені кути для всієї картки */
+  overflow: hidden; /* Гарантія, що вміст не виходить за межі */
+  background-color: #fff; /* Білий фон */
+  padding: 0; /* Забираємо внутрішні відступи */
+}
+
+/* Ефект наведення */
+.cards:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Глибша тінь */
+}
+
+/* Зображення */
+.cards img {
+  width: 100%; /* Заповнює всю ширину картки */
+  height: 180px; /* Фіксована висота */
+  object-fit: cover; /* Зберігає пропорції зображення */
+  border-radius: 10px; /* Закруглені кути для зображення */
+  margin-bottom: 10px; /* Відступ під зображенням */
+}
+
+/* Тіло картки */
+.cards-body {
+  padding: 10px 15px; /* Відступи всередині текстової частини */
+  text-align: left; /* Текст вирівняний по лівому краю */
+}
+
+/* Заголовок */
+.cards-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333; /* Темно-сірий текст */
+  margin-bottom: 8px;
+}
+
+/* Локація */
+.cards-body .location {
+  font-size: 0.9rem;
+  color: #555; /* Середньо-сірий текст */
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Відступ між іконкою і текстом */
+  margin-bottom: 4px;
+}
+
+/* Рейтинг */
+.cards-body .rating {
+  font-size: 0.9rem;
+  color: #f4c430; /* Жовтий колір для зірок */
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Відступ між зіркою і числом */
+  margin-bottom: 8px;
+}
+
+/* Додатковий опис */
+.cards-body .details {
+  font-size: 0.85rem;
+  color: #555; /* Темно-сірий текст */
+  margin-bottom: 5px;
+}
+
+/* Ціна */
+.cards-body .price {
+  font-size: 1rem;
+  color: #333; /* Темний текст */
+  font-weight: bold;
+}
+
+.cards-body .price span {
+  font-size: 0.85rem;
+  color: #777; /* Світло-сірий текст для "per person" */
+  font-weight: normal;
+}
+
+/* Контейнер для кнопок */
+.carousel-controls {
+  margin-top: 15px; /* Відступ від карток */
+  display: flex; /* Вирівнюємо кнопки в лінію */
+  justify-content: center; /* Центруємо кнопки */
+  gap: 10px; /* Простір між кнопками */
+}
+
+/* Кнопки */
+.carousel-controls .btn {
+  border-radius: 50%; /* Круглі кнопки */
+  width: 40px; /* Фіксована ширина */
+  height: 40px; /* Фіксована висота */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-controls .btn i {
+  font-size: 1.2rem; /* Розмір іконки */
+}
